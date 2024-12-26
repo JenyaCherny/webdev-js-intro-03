@@ -1,0 +1,12 @@
+Explain why a number data type added to a string data type returns a string.
+Answer: JavaScript automatically converts the number 1 to a string and then concatenates the two strings. This is known as type coercion. The + operator, when used between a number and a string, treats the number as a string and concatenates the two strings together.
+
+Name a scenario where using the == operator could cause a bug.
+Answer: A function that checks if a user input is the number 0. JavaScript can cause bugs due to its behavior of type coercion.
+Using == leads to unexpected true results for "0", false, and null, which might not be the intended behavior. The function mistakenly considers these values as 0 due to type coercion.
+
+Name the operator(s) that you find confusing and explain why.
+Answer: I had troubles to understand Assignment operators - Destructuring. And I still need to revisit Bitwise operators. 
+
+Explain a situation where you would use the Modulus operator and why.
+Answer: Common use of the modulus operator is to determine if a number is even or odd. Based on a reminder of operation we can determine if a number is even (reminder is 0) or odd (reminder is more than 0).
